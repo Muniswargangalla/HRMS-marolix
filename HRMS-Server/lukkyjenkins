@@ -1,25 +1,17 @@
 pipeline {
 agent any 
 
-    environment {
-        PATH = "/path/to/pyenv/bin:${env.PATH}"
-        SHELL = '/bin/bash' // or '/bin/sh' depending on your shell
-    }
-
-
-
-
-
-
-
 stages{
 
 
-stage("intigration"){
+stage("git clone"){
 
 steps{
-git branch: 'main', url: 'https://github.com/R807989/hrmsnew.git'
+git branch: 'main', url: 'https://github.com/Muniswargangalla/HRMS-marolix.git'
 
 }
 
+}
+
+}
 }
